@@ -2,11 +2,30 @@ const sha256script = document.createElement('script');
 sha256script.src = 'https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js';
 document.head.appendChild(sha256script);
 
+let mempool = [
 
-let mempool = {
+];
 
-};
+let unidadesCurso = [
+    'interes',
+    'credito',
+    'bonos',
+    'ahorro',
+    'inversion'
+]
 
+let usuarios = [
+    'Maria',
+    'Santiago',
+    'Juan',
+    'Jose',
+    'Johana',
+    'Federico'
+]
+
+function agregarNota(usuario, unidad, nota){
+    mempool[mempool.length] = `${usuario} ${nota}, ${unidad} `
+}
 
 
 class Blockchain{
@@ -71,4 +90,3 @@ class Blockchain{
 
 
 let blockchain = new Blockchain;
-
