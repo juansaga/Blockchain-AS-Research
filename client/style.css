@@ -1,0 +1,18 @@
+body {
+    background: #0A192F;
+    color: white
+}
+
+.box {
+    border: 1px solid #333333;
+    width: 320px;
+    height: 100px;
+    overflow: scroll;
+  }
+
+  .box1 {
+    border: 1px solid #333333;
+    width: 650px;
+    height: 100px;
+    overflow: scroll;
+  }
